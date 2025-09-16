@@ -1,16 +1,12 @@
 #Trabajo Practico 4:estructras repetitivas
 #ejercicio 1
-for ej1 in range(100,0,-1):
+for ej1 in range(0,100,1):
     print (ej1)
     print ("")
 #ejercicio 2
 num_entero_ej2=int(input("intruduce un numero entero:"))
 num_entero_ej2_str=len(str(num_entero_ej2))
-if num_entero_ej2_str<10:
-    print (f"el numero {num_entero_ej2} tiene {num_entero_ej2_str} cifra")
-else:
-    print (f"el numero {num_entero_ej2} tiene {num_entero_ej2_str} cifras")
-print ("")
+print (f"el numero {num_entero_ej2} tiene {num_entero_ej2_str} digitos")
 #ejercicio 3
 num_ej3=int(input("ingresa el primer numero"))
 num2_ej3=int(input("ingresa el segundo numero"))
@@ -27,7 +23,8 @@ print ("")
 num_ej4=0
 num_ej4_2=1
 while num_ej4_2!=0:
-    num_ej4_2=int(input("escribe un numero un un numero:"))
+    num_ej4_2=int(input("escribe un numero:"))
+    print ("para terminar con el ciclo ingresa 0")
     num_ej4=num_ej4+num_ej4_2
     print (num_ej4)
     print ("")
@@ -35,22 +32,25 @@ while num_ej4_2!=0:
 import random
 num_ej5=int(input("adivina el numero del 0 al 9:"))
 num_aleatorio=random.randint(0,9)
+intentos_ej5=0
 while num_ej5!=num_aleatorio:
     print ("intenta de nuevo")
     num_ej5=int(input("adivina el numero del 0 al 9:"))
+    intentos_ej5+=1
 print ("adivinaste")
+print (f"fueron necesarios {intentos_ej5} para que acertaras")
 print ("")
 #ejercicio 6
-for num_ej6 in range (0,101,1):
+for num_ej6 in range (101,-1,-1):
     if num_ej6%2==0:
         print (num_ej6)
 print ("")
 #ejercicio 7
-usuario_ej_7=int(input("ingresa un numero"))
-for i7 in range  (0,usuario_ej_7,1):
-    usuario_ej_7=usuario_ej_7+i7
-print (usuario_ej_7)
-print ("")
+numero_usuario7=int(input("ingresa un numero"))
+valor_acumulado=0
+for i7 in range (0,numero_usuario7+1):
+    valor_acumulado+= i7
+print (f"la suma de los numeros comprendios entre 0 y {numero_usuario7} es {valor_acumulado}")
 #ejercicio 8
 num_pares=0
 num_impares=0
