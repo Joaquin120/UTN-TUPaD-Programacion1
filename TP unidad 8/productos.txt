@@ -1,0 +1,5 @@
+{'producto': 'lapiz', 'precio': '250', 'cantidad': '5'}
+{'producto': 'goma', 'precio': '200', 'cantidad': '4'}
+{'producto': 'cartuchera', 'precio': '400', 'cantidad': '3'}
+{'producto': 'regla', 'precio': '150', 'cantidad': '3'}
+{'producto': 'sacapunta', 'precio': '300', 'cantidad': '2'}
